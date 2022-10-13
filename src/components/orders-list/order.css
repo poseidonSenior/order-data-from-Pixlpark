@@ -1,0 +1,19 @@
+.order-container {
+    display: flex;
+    justify-content: center;
+}
+
+.order {
+    border: 2px solid red;
+    margin-top: 50px;
+}
+
+.img,
+.text-info {
+    display: block;
+}
+
+.delivery-address {
+    border: 1px solid;
+    border-radius: 20px;
+}
