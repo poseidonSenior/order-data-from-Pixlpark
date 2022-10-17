@@ -3,7 +3,7 @@ import { put, takeEvery, call } from "redux-saga/effects";
 import { errorAccessToken, setAccessToken, FETCH_ACCESS_TOKEN } from "../actions";
 
 const fetchData = (params) => {
-    return axios.get('http://api.pixlpark.com/oauth/accesstoken', { params })
+    return axios.get('/oauth/accesstoken', { params })
 }
 
 function* getAccessToken(action) {

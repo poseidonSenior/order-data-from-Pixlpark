@@ -3,7 +3,7 @@ import { put, takeEvery, call } from "redux-saga/effects";
 import { errorOrdersList, setOrdersList, FETCH_ORDERS_LIST } from "../actions";
 
 const fetchData = (params) => {
-    return axios.get('http://api.pixlpark.com/orders', { params })
+    return axios.get('/orders', { params })
 }
 
 function* getOrdersList(action) {

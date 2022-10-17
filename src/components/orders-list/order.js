@@ -22,11 +22,11 @@ export const Order = (props) => {
                 <span className='text-info'>Дата заказа: {date.toLocaleString("ru", options)}</span>
                 <div className='delivery-address'>
                     Адрес доставки:
-                    <span className='text-info'>Индекс: {order.DeliveryAddress.ZipCode}</span>
-                    <span className='text-info'>Город: {order.DeliveryAddress.City}</span>
-                    <span className='text-info'>Улица: {order.DeliveryAddress.AddressLine1}</span>
-                    <span className='text-info'>ФИО: {order.DeliveryAddress.FullName}</span>
-                    <span className='text-info'>Номер телефона: {order.DeliveryAddress.Phone}</span>
+                    <span className='text-info'>Индекс: {order.DeliveryAddress && order.DeliveryAddress.State}</span>
+                    <span className='text-info'>Город: {order.DeliveryAddress && order.DeliveryAddress.City}</span>
+                    <span className='text-info'>Улица: {order.DeliveryAddress && order.DeliveryAddress.AddressLine1}</span>
+                    <span className='text-info'>ФИО: {order.DeliveryAddress && order.DeliveryAddress.FullName}</span>
+                    <span className='text-info'>Номер телефона: {order.DeliveryAddress && order.DeliveryAddress.Phone}</span>
                 </div>
 
             </div>
